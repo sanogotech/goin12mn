@@ -3,8 +3,18 @@ package main
 import "fmt"
 
 func main() {
-	
+
    // https://gobyexample.com/variables
+	
+   	
+   const s string = "constant"
+   const n = 500000000
+	
+    const d = 3e20 / n
+    fmt.Println(d)
+    //A numeric constant has no type until it’s given one, such as by an explicit conversion.
+
+    fmt.Println(int64(d))
    //var declares 1 or more variables  
    var a = "initial"
    fmt.Println(a)
